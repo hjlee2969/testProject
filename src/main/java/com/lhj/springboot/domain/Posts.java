@@ -1,5 +1,6 @@
 package com.lhj.springboot.domain;
 
+import com.lhj.springboot.web.dto.PostsUpdateRequestDto;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -27,5 +28,10 @@ public class Posts {
         this.title = title;
         this.content = content;
         this.author = author;
+    }
+
+    public void update(PostsUpdateRequestDto requestDto){
+        this.title = requestDto.getTitle();
+        this.content = requestDto.getContent();
     }
 }
