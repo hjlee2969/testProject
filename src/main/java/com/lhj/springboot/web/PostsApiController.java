@@ -1,5 +1,4 @@
 package com.lhj.springboot.web;
-import com.lhj.springboot.domain.Posts;
 import com.lhj.springboot.service.posts.PostsService;
 import com.lhj.springboot.web.dto.PostsResponseDto;
 import com.lhj.springboot.web.dto.PostsSaveRequestDto;
